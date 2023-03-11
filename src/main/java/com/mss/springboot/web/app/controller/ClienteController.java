@@ -20,7 +20,7 @@ import com.mss.springboot.web.app.services.ImplementClienteServicio;
 
 
 @RestController
-@RequestMapping("/api/cliente")
+@RequestMapping("/api")
 public class ClienteController {
 	
 	
