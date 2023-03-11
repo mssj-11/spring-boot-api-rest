@@ -3,18 +3,19 @@ package com.mss.springboot.web.app.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.mss.springboot.web.app.models.Cliente;
 import com.mss.springboot.web.app.repositories.ClienteRepositorio;
 
 
+@Service
 //	Añadiendo los Metodos de la interfaz IClienteServicio
 public class ImplementClienteServicio implements IClienteServicio{
 	
 	//	Inyeccion de Dependencia
 	@Autowired
 	ClienteRepositorio clienteRepositorio;
-	
 	
 	
 	//	Metodos propios de la clase "JpaRepository"
@@ -44,7 +45,6 @@ public class ImplementClienteServicio implements IClienteServicio{
 		// TODO Auto-generated method stub
 		clienteRepositorio.deleteById(id);
 	}
-	
 	
 	
 }
